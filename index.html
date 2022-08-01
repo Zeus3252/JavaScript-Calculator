@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+   <link rel="stylesheet" href="style-main.css">
+</head>
+
+<body>
+  <form name="calc">
+   <table>
+      <tr>
+         <td colspan="5">
+            <input type="text" name="answer" id="answer" disabled>
+           
+         </td>
+      </tr>
+      <tr>
+            <td>
+                <input type="button" name="one" value="1" button onclick="calc.answer.value += '1'">
+            </td>
+            <td>
+                <input type="button" name="two" value="2" button onclick="calc.answer.value +='2'">
+            </td>
+            <td>
+                <input type="button" name="three" value="3" button onclick="calc.answer.value += '3'">
+            </td>
+            <td>
+                <input type="button" class="operation" name="addition" value="+" button onclick="calc.answer.value += '+'">
+            </td>
+     </tr>
+     <tr>
+            <td>
+                <input type="button" name="four" value="4" button onclick="calc.answer.value += '4'">
+            </td>
+            <td>
+                <input type="button" name="five" value="5" button onclick="calc.answer.value += '5'">
+            </td>
+            <td>
+                <input type="button" name="six" value="6" button onclick="calc.answer.value += '6'">
+            </td>
+            <td>
+                <input type="button" class="operation" name="minus" value="-" button onclick="calc.answer.value += '-'">
+            </td>
+     </tr>
+     <tr>
+            <td>
+                <input type="button" name="seven" value="7" button onclick="calc.answer.value+='7'">
+            </td>
+            <td>
+                <input type="button" name="eight" value="8" button onclick="calc.answer.value +='8'">
+            </td>
+            <td>
+                <input type="button" name="nine" value="9" button onclick="calc.answer.value += '9'">
+            </td>
+            <td>
+                <input type="button" class="operation" name="multi" value="x" button onclick="calc.answer.value += '*'">
+            </td>
+     </tr>
+     <tr>
+            <td>
+                <input type="button" id="clear" name="clear" value="CE" button onclick="calc.answer.value = ''">
+            </td>
+            <td>
+                <input type="button" name="zero" value="0" button onclick="calc.answer.value +='0'">
+            </td>
+            <td>
+                <input type="button" name="solve" value="=" button onclick="calc.answer.value = eval(calc.answer.value)">
+            </td>
+            <td>
+                <input type="button" class="operation" name="division" value="/" button onclick="calc.answer.value += '/'">
+            </td>
+      
+      </tr>
+   </table>
+</form> 
+    
+</body>
+
+</html>
